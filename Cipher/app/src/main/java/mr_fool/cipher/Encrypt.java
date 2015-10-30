@@ -25,7 +25,7 @@ public class Encrypt extends AppCompatActivity {
         textView.setTextColor(Color.parseColor("#FFFFFF"));
         textView.setText(message);
         // Set the text view as the activity layout
-        setContentView(R.layout.RelativeLayout);
+        setContentView(R.layout.activity_encrypt);
 
     }
 }
