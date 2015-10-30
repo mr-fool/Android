@@ -23,7 +23,7 @@ public class Encrypt extends AppCompatActivity {
         String message = "The shift key is " + transition_key + "and the content is " + content;
         TextView textView = (TextView)findViewById(R.id.displayText);
         textView.setTextSize(30);
-        textView.setTextColor(Color.parseColor("#FFFFFF"));
+        textView.setTextColor(Color.BLACK);
         textView.setText(message);
         // Set the text view as the activity layout
 
