@@ -10,4 +10,14 @@
         android:layout_height="wrap_content"
         android:textIsSelectable="true"
         android:id="@+id/displayText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My github"
+        android:id="@+id/github"
+        android:onClick="github"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
