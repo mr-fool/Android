@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    tools:context="mr_fool.cipher.EncrpytMenu">
+    <TextView
+        android:id="@+id/shift"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:text="Shift"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/key"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/shift"
+        android:hint="1-26" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plain"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/key"
+        android:textSize="20sp"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/content"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/key"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_alignParentBottom="true"
+        android:onClick="sendMessage"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
